@@ -1,23 +1,23 @@
-console.log("Hello JS");
-console.log(525252123);
-console.log("5" + 2);
-let number = 5;
-let secondNumber = 2;
-let myName = "DavidYoon"
-number = 3
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
 
-console.log(number + secondNumber);
-console.log(number / secondNumber);
-console.log(number * secondNumber);
-console.log("Hello " + myName);
-myName = "JiwonYoon"
+const daysOfWeek = [
+    mon,
+    tue,
+    wed,
+    thu,
+    fri,
+    sat,
+    sun,
+];
 
-console.log("My new Name is " + myName);
+const nonsense = [1, 2, "Hello", false, null, undefined, ""];
 
-// const can't change, 
-// use const default
-// old way is var
-var varTest = 10;
-console.log(varTest);
-varTest = 5;
-console.log(varTest);
+console.log(daysOfWeek[0], nonsense[1]);
+daysOfWeek.push("special");
+console.log(daysOfWeek);
