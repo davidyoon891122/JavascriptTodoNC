@@ -1,26 +1,19 @@
-const calculator = {
-    add: function(a,b) {
-        return a + b
-    },
-    subtract: function(a,b) {
-        return a - b
-    },
-    mutiply: function(a,b) {
-        return a * b
-    },
-    divide: function(a,b) {
-        return a / b
-    },
-    power: function(a,b) {
-        return a ** b
-    }
+// conditional
+
+const age = parseInt(prompt("How old are you?")) // It is not using anymore, can't custom and stop browser, get string data
+
+console.log(typeof(age), age);
+if (isNaN(age) || age < 0) {
+    alert("Please write a positive number")
+} else if (age < 18 ) {
+    alert("you are not safified the condition")
+}else if ( age > 18 && age < 50) {
+    alert("you can drink")
+}  else if ( age> 51 && age <= 80) {
+    alert("you should exercise");
+} else if ( age > 80) {
+    alert("plase do not drink for your health condition");
+} else {
+    alert("too old");
 }
 
-calculator.add(1,2);
-calculator.subtract(5,3);
-calculator.mutiply(2,5);
-calculator.divide(10,2);
-const result = calculator.power(3,3)
-console.log(result);
-const addResult = calculator.add(result, 10);
-console.log(addResult);
