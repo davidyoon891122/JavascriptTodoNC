@@ -1,38 +1,27 @@
-function sayHello(name, age) {
-    console.log("Hello My name is" + name + ", age is " + age);
-    return "Hello My name is" + name;
-};
+// recap
+// types
+// string, number, boolean, null, NaN, undefined
+const a = NaN
+const b = null
+let c;
+console.log(a, b, c);
 
+console.log(42/0);
+console.log(42/-0);
 
-sayHello("david", 33);
-sayHello("nico") // no argument will be undefined
-sayHello("lynn");
-// alert(sayHello("david"));
+// BigInt
+const x = 2n ** 53n 
+const y = x + 1n
+console.log(x, y);
 
+// Array
+const days = [1,2,"수", false, null, undefined];
+const toBuy = ["potato", "tomato", "pizza"]
+console.log(toBuy[2]);
+// update 
+toBuy[2] = "water"
 
-function plus(a, b) {
-    return a + b
-}
-
-function divide(a,b) {
-    return a / b;
-}
-
-console.log(plus());
-console.log(plus(1,2));
-console.log(plus(8, 60));
-
-console.log(divide(1,2));
-console.log(divide(2,0)); //python ZeroDivisionError
-console.log(divide(0,5));
-
-const player = {
-    name: "davidYoon",
-    sayHello: sayHello(),
-    helloFunction: function(country) {
-        console.log("hello "+ country);
-    }
-};
-
-player.sayHello
-player.helloFunction("Korea");
+console.log(toBuy[2]);
+// add
+toBuy.push("coke");
+console.log(toBuy);
