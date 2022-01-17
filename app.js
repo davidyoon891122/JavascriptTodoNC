@@ -11,6 +11,8 @@ if (isNaN(age) || age < 0) {
     alert("you can drink")
 }  else if ( age> 51 && age <= 80) {
     alert("you should exercise");
+}else if ( age === 100) {
+    alert("special event, you can get free items");
 } else if ( age > 80) {
     alert("plase do not drink for your health condition");
 } else {
