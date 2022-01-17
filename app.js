@@ -1,1 +1,4 @@
-document.title = "Javascrpt and HTML are connected"
+const title = document.getElementById("title");
+title.innerText = "Got you!";
+console.log(title.id);
+console.log(title.className);
