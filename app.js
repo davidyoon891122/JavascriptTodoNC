@@ -4,17 +4,12 @@ const h1 = document.querySelector(".hello:first-child h1");
 
 
 function handleClickEvent(){
-    const currentClass = h1.className;
-    const clickedClass = "clicked sexy-font";
-    console.log(h1.className)
-    let newClass;
-
-    if (currentClass === clickedClass) {
-        newClass = "";
+    const clickedClass = "clicked";
+    if (h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass);
     } else {
-        newClass = clickedClass;
+        h1.classList.add(clickedClass);
     }
-    h1.className = newClass
 }
 
 
