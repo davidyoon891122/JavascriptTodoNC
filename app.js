@@ -1,39 +1,22 @@
 const h1 = document.querySelector(".hello:first-child h1");
 
-function handleTitleClick() {
-    //console.log("title was clicked!");
-    h1.style.color = "blue";
+
+
+
+function handleClickEvent(){
+    const currentClass = h1.className;
+    const clickedClass = "clicked sexy-font";
+    console.log(h1.className)
+    let newClass;
+
+    if (currentClass === clickedClass) {
+        newClass = "";
+    } else {
+        newClass = clickedClass;
+    }
+    h1.className = newClass
 }
 
-function handleMouseEnter() {
-    h1.innerText = "Mouse is here";
-}
 
-function handleMouseLeave() {
-    h1.innerText = "Mouse is gone";
-}
+h1.addEventListener("click", handleClickEvent);
 
-function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy() {
-    alert("copier");
-}
-
-function handleWindowOffline() {
-    alert("SOS no WIFI");
-}
-
-function handleWindowOnline() {
-    alert("all Goood");
-}
-
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
