@@ -1,13 +1,11 @@
-const loginInput = document.querySelector("#login-form input");
+const loginForm = document.querySelector("#login-form");
 const loginButton = document.querySelector("#login-form button");
 
 
-function hanleLoginButtonClick() {
-    const userName = loginInput.value;
-    
-    console.log("Hello !" + userName);
+function onLoginSubmit(tomato) {
+    tomato.preventDefault();
+    console.log(tomato);
     
 }
 
-
-loginButton.addEventListener("click", hanleLoginButtonClick);
+loginForm.addEventListener("submit", onLoginSubmit);
