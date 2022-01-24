@@ -3,7 +3,10 @@ const loginButton = document.querySelector("#login-form button");
 
 
 function hanleLoginButtonClick() {
-    console.log("Hello !" + loginInput.value);
+    const userName = loginInput.value;
+    
+    console.log("Hello !" + userName);
+    
 }
 
 
