@@ -8,7 +8,9 @@ function onLoginSubmit(event) {
     event.preventDefault(); // stop default behavior
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const userName = loginInput.value;
+    localStorage.setItem("userName", userName);
     greeting.innerText = `Hello ${userName}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+
 }
 loginForm.addEventListener("submit", onLoginSubmit);
